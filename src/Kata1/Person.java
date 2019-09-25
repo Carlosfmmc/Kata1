@@ -26,10 +26,10 @@ public class Person {
         return birthday;
     }
 
-    public int get age(){
+    public int getAge(){
         long ms = new Date().getTime() - birthday.getTime();
         return toYears(ms);
-00    }
+    }
 
     private int toYears(long ms) {
         return (int)(ms/MS_PER_Year);
